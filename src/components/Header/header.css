@@ -1,0 +1,66 @@
+header{
+    height: 100vh;
+    padding-top: 2rem;
+    overflow: hidden;
+}
+.header_container{
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+/* CTA  */
+.cta{
+    margin-top: 2rem;
+    display: flex; 
+    gap:1.2rem; /* only vailable in display grid or flex to create space between items */
+    justify-content: center;
+}
+/* Socials  */
+.header_socials{
+    display:flex;
+    flex-direction: column; 
+    gap:0.8rem;
+    align-items: center;
+    position: fixed; /* allow positioning the socials to bottom right */
+    top:50%;
+    right: 1.5rem;
+    transform: translate(0, -50%);
+    font-size: 1.2rem;
+}
+.header_socials::after, .header_socials::before{
+    content: "";
+    width: 1px;
+    height: 2.5rem;
+    background: var(--color-primary);
+}
+/* ME  */
+.me{
+    background: linear-gradient(180deg, var(--color-primary), transparent 60%);
+    width: 18rem;
+    height: 30rem;
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    /* left: calc(50%-11rem);  */
+    /*this centering method is not as flexible as the method above*/
+    margin-top: 3rem;
+    border-radius: 12rem 12rem 0 0;
+    overflow: hidden;
+    padding: 5rem 1.5rem 1.5rem 1.5rem;
+}
+/* ===========MEDIA QUERIES=========== */
+/* for tablets */
+@media screen and (max-width: 1024px){
+    .header_container{
+        height: 86vh;
+    }
+}
+/* for mobile */
+@media screen and (max-width:600px){
+    .header_container{
+        height: 100vh;
+    }
+    .header_socials{
+        display:none;
+    }
+}

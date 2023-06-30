@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+/* import google fonts: Poppins 300,400,500,600*/
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    /* make a default setting */
+}
+:root{
+    /* color variables*/
+    --color-bg: #744863;
+    --color-bg-variant: #f68ab7;
+    --color-primary: #9785B5;
+    --color-primary-variant: #66394c;
+    --color-white: #fff;
+    --color-light: rgba(255, 255, 255, 0.671);
+    /* container variables */
+    --container-width-lg: 75%;
+    --container-width-md: 86%;
+    --container-width-sm: 90%;
+    /* transition variables */
+    --transition: all 400ms ease;
+}
+::-webkit-scrollbar{
+    display:none;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-white);
+    line-height: 1.5;
+    /* background-image: url(https://static.zerochan.net/Kafka.%28Honkai.Star.Rail%29.full.3940421.png); */
+    background-color: rgb(116, 72, 99, 0.8);
+}
+/* ===========GENERAL STYLES===========  */
+.container{
+    width: var(--container-width-lg);
+    margin: 0 auto;
+}
+/* headings */
+h1,h2,h3,h4,h5{
+    font-weight: 500;
+}
+h1{
+    font-size: 2rem;
+}
+/* section, section headings */
+section{
+    margin-top: 8rem;
+    /* spacing between sections */
+    height: 100vh;
+}
+section > h2, section > h5{
+    text-align: center;
+    color: var(--color-light); 
+}
+section > h2{
+    color: var(--color-primary);
+    margin-bottom: 3rem;
+}
+/* color text light  */
+.text-light{
+    color:var(--color-light);
+}
+/*anchor for links*/
+a{ 
+    text-decoration: none; /* to remove the default underline */
+    color: var(--color-primary);
+    transition: var(--transition); 
+}
+a:hover{
+    color:var(--color-white);
+}
+/* buttons  */
+.btn{
+    width: max-content;
+    display: inline-block;
+    color: var(--color-bg);
+    padding: 0.75rem 1.2rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    border: 1.5px solid var(--color-bg);
+    transition: var(--transition);
+}
+.btn:hover{
+    background: var(--color-white);
+    color: var(--color-bg);
+    border-color: transparent;
+}
+.btn-primary{
+    background: var(--color-bg);
+    color: var(--color-light);
+    border: 1.5px solid var(--color-primary-variant);
+}
+/* img  */
+img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+/* ===========MEDIA QUERIES=========== */
+/* for tablets */
+@media screen and (max-width: 1024px){
+    .container{
+        width: var(--container-width-md);
+    }
+    section{
+        margin-top: 6rem;
+    }
+}
+/* for mobile */
+@media screen and (max-width:600px){
+    .container{
+        width: var(--container-width-sm);
+    }
+    section>h2 {
+        margin-top: 2rem;
+    }
+}
