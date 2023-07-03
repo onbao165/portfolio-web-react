@@ -15,12 +15,13 @@ body{
 }
 :root{
     /* color variables*/
-    --color-bg: #744863;
-    --color-bg-variant: #f68ab7;
-    --color-primary: #9785B5;
-    --color-primary-variant: #66394c;
+    --color-bg: #68207ed3;
+    --color-bg-variant: #b84d82;
+    --color-primary: #ff82d5;
+    --color-primary-variant: #b639a5ea;
+    --color-avatar-bg: #ba386c;
     --color-white: #fff;
-    --color-light: rgba(255, 255, 255, 0.671);
+    --color-light: rgba(246, 243, 243, 0.744);
     /* container variables */
     --container-width-lg: 75%;
     --container-width-md: 86%;
@@ -35,8 +36,10 @@ body{
     font-family: 'Poppins', sans-serif;
     color: var(--color-white);
     line-height: 1.5;
-    /* background-image: url(https://static.zerochan.net/Kafka.%28Honkai.Star.Rail%29.full.3940421.png); */
-    background-color: rgb(116, 72, 99, 0.8);
+    /* background-image: url('../assets/background.jpg'); */
+    background: var(--color-bg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 /* ===========GENERAL STYLES===========  */
 .container{
@@ -58,10 +61,9 @@ section{
 }
 section > h2, section > h5{
     text-align: center;
-    color: var(--color-light); 
+    color: var(--color-white); 
 }
 section > h2{
-    color: var(--color-primary);
     margin-bottom: 3rem;
 }
 /* color text light  */
@@ -81,21 +83,21 @@ a:hover{
 .btn{
     width: max-content;
     display: inline-block;
-    color: var(--color-bg);
+    color: var(--color-primary);
     padding: 0.75rem 1.2rem;
     border-radius: 0.4rem;
     cursor: pointer;
-    border: 1.5px solid var(--color-bg);
+    border: 1.5px solid var(--color-primary);
     transition: var(--transition);
 }
 .btn:hover{
     background: var(--color-white);
-    color: var(--color-bg);
+    color: var(--color-primary);
     border-color: transparent;
 }
 .btn-primary{
-    background: var(--color-bg);
-    color: var(--color-light);
+    background: var(--color-primary);
+    color: var(--color-white);
     border: 1.5px solid var(--color-primary-variant);
 }
 /* img  */

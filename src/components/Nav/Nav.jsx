@@ -1,33 +1,72 @@
-import React from 'react'
-import './nav.css'
-import {AiOutlineHome} from 'react-icons/ai'
-import {BiUserCircle} from 'react-icons/bi'
-import {BiBookBookmark} from 'react-icons/bi'
-import {BsBriefcase} from 'react-icons/bs'
-import {MdAlternateEmail} from 'react-icons/md'
-import { useState } from 'react'
+import React,{useEffect} from "react";
+import "./nav.css";
+import { AiOutlineHome } from "react-icons/ai";
+import { BiUserCircle } from "react-icons/bi";
+import { BiBookBookmark } from "react-icons/bi";
+import { BsBriefcase } from "react-icons/bs";
+import { MdAlternateEmail } from "react-icons/md";
 
-const Nav = () => {
-  const [activeNav, setActiveNav] = useState('#')
+const Nav = ({activeNav, setActiveNav}) => {
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = ["#home", "#about", "#experience", "#services", "#contact"];
+      
+      const timeoutId = setTimeout(() => {
+        // Check which section is in the viewport
+        for (let i = 0; i < sections.length; i++) {
+          const section = document.querySelector(sections[i]);
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.offsetHeight;
+
+          if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+            setActiveNav(sections[i]);
+            break;
+          }
+        }
+      }, 100);
+      //the setTimeout make the handler wait a little time before making changes, make it less laggy when user scroll too fast
+    };
+    
+    window.addEventListener("scroll", handleScroll);
+    
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <nav>
-      <a href="#" onClick={()=> setActiveNav('#')} className={activeNav === '#' ? 'active' : ''}>
-        <AiOutlineHome/>
+      <a
+        href="#home"
+        className={activeNav === "#home" ? "active" : ""}
+      >
+        <AiOutlineHome />
       </a>
-      <a href="#about" onClick={()=> setActiveNav('#about')} className={activeNav === '#about' ? 'active' : ''}>
-        <BiUserCircle/>
+      <a
+        href="#about"
+        className={activeNav === "#about" ? "active" : ""}
+      >
+        <BiUserCircle />
       </a>
-      <a href="#experience" onClick={()=> setActiveNav('#experience')} className={activeNav === '#experience' ? 'active' : ''}>
-        <BiBookBookmark/>
+      <a
+        href="#experience"
+        className={activeNav === "#experience" ? "active" : ""}
+      >
+        <BiBookBookmark />
       </a>
-      <a href="#services" onClick={()=> setActiveNav('#services')} className={activeNav === '#services' ? 'active' : ''}>
-        <BsBriefcase/>
+      <a
+        href="#services"
+        className={activeNav === "#services" ? "active" : ""}
+      >
+        <BsBriefcase />
       </a>
-      <a href="#contact" onClick={()=> setActiveNav('#contact')} className={activeNav === '#contact' ? 'active' : ''}>
-        <MdAlternateEmail/>
+      <a
+        href="#contact"
+        className={activeNav === "#contact" ? "active" : ""}
+      >
+        <MdAlternateEmail />
       </a>
     </nav>
-  )
-}
+  );
+};
+export default Nav;
 
-export default Nav
