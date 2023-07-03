@@ -49,15 +49,17 @@ body{
 /* headings */
 h1,h2,h3,h4,h5{
     font-weight: 500;
+    margin: 1rem auto;
+    text-align: center;
 }
 h1{
     font-size: 2rem;
 }
 /* section, section headings */
 section{
-    margin-top: 8rem;
+    margin-top: 6rem;
     /* spacing between sections */
-    height: 100vh;
+    height: 80vh;
 }
 section > h2, section > h5{
     text-align: center;
@@ -113,7 +115,7 @@ img{
         width: var(--container-width-md);
     }
     section{
-        margin-top: 6rem;
+        margin-top: 4rem;
     }
 }
 /* for mobile */
