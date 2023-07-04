@@ -56,7 +56,7 @@ h1{
 }
 /* section, section headings */
 section{
-    margin-top: 6rem;
+    padding-top: 5rem;
     /* spacing between sections */
 }
 section > h2, section > h5{

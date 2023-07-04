@@ -17,8 +17,9 @@ const Nav = ({activeNav, setActiveNav}) => {
           const section = document.querySelector(sections[i]);
           const sectionTop = section.offsetTop;
           const sectionHeight = section.offsetHeight;
-
-          if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+          const sectionMiddle = sectionTop+sectionHeight/2;
+          const middleY = window.scrollY + window.innerHeight / 2;
+          if (middleY >= sectionMiddle && middleY < sectionTop + sectionHeight) {
             setActiveNav(sections[i]);
             break;
           }
