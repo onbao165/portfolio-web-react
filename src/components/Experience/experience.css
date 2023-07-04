@@ -57,9 +57,9 @@
         gap: 1rem;
     }
     .experience_content{
-        padding: 1rem;
+        padding: 0.5rem;
     }
     .experience_details{
-        padding: 0 1rem;
+        padding: 0 0.5rem;
     }
 }

@@ -106,14 +106,18 @@ img{
     width: 100%;
     object-fit: cover;
 }
+ul{
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+    /* remove default indentation and style  */
+}
+    
 /* ===========MEDIA QUERIES=========== */
 /* for tablets */
 @media screen and (max-width: 1024px){
     .container{
         width: var(--container-width-md);
-    }
-    section{
-        margin-top: 4rem;
     }
 }
 /* for mobile */

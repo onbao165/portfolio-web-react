@@ -8,7 +8,7 @@ const Experience = () => {
       <div className="container experience_container">
         <div className="experience_frontend">
           {/* Frontend */}
-          <h3>FrontEnd Development</h3>
+          <h3>Front-End Development</h3>
           <div className="experience_content">
             <article className="experience_details">
               <BiCube className="experience_details_icon"/>
@@ -42,7 +42,7 @@ const Experience = () => {
         </div>
         {/* Backend */}
         <div className="experience-backend">
-          <h3>BackEnd Development</h3>
+          <h3>Back-End Development</h3>
           <div className="experience_content">
             <article className="experience_details">
               <BiCube className="experience_details_icon"/>
