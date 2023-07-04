@@ -1,9 +1,9 @@
 header{
-    height: 100vh;
     padding-top: 2rem;
     overflow: hidden;
 }
 .header_container{
+    height: 100vh;
     text-align: center;
     height: 100%;
     position: relative;
@@ -58,13 +58,13 @@ header{
 /* for tablets */
 @media screen and (max-width: 1024px){
     .header_container{
-        height: 86vh;
+        height: 60vh;
     }
 }
 /* for mobile */
 @media screen and (max-width:600px){
     .header_container{
-        height: 100vh;
+        height: 60vh;
     }
     .header_socials{
         display:none;

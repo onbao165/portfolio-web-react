@@ -11,24 +11,32 @@ const Experience = () => {
           <h3>FrontEnd Development</h3>
           <div className="experience_content">
             <article className="experience_details">
-              <BiCube />
-              <h4>HTML</h4>
-              <small className="text-light">Intermediate</small>
+              <BiCube className="experience_details_icon"/>
+              <div>
+                <h4>HTML</h4>
+                <small className="text-light">Intermediate</small>
+              </div>
             </article>
             <article className="experience_details">
-              <BiCube />
-              <h4>CSS</h4>
-              <small className="text-light">Intermediate</small>
+              <BiCube className="experience_details_icon"/>
+              <div>
+                <h4>CSS</h4>
+                <small className="text-light">Intermediate</small>
+              </div>
             </article>
             <article className="experience_details">
-              <BiCube />
-              <h4>JAVASCRIPT</h4>
-              <small className="text-light">Intermediate</small>
+              <BiCube className="experience_details_icon"/>
+              <div>
+                <h4>JAVASCRIPT</h4>
+                <small className="text-light">Intermediate</small>
+              </div>
             </article>
             <article className="experience_details">
-              <BiCube />
-              <h4>REACT</h4>
-              <small className="text-light">Beginner</small>
+              <BiCube className="experience_details_icon"/>
+              <div>
+                <h4>REACT</h4>
+                <small className="text-light">Beginner</small>
+              </div>
             </article>
           </div>
         </div>
@@ -37,19 +45,25 @@ const Experience = () => {
           <h3>BackEnd Development</h3>
           <div className="experience_content">
             <article className="experience_details">
-              <BiCube />
-              <h4>JAVA SPRING BOOT</h4>
-              <small className="text-light">Intermediate</small>
+              <BiCube className="experience_details_icon"/>
+              <div>
+                <h4>JAVA SPRING BOOT</h4>
+                <small className="text-light">Intermediate</small>
+              </div>
             </article>
             <article className="experience_details">
-              <BiCube />
-              <h4>DOCKER</h4>
-              <small className="text-light">Beginner</small>
+              <BiCube className="experience_details_icon"/>
+              <div>
+                <h4>DOCKER</h4>
+                <small className="text-light">Beginner</small>
+              </div>
             </article>
             <article className="experience_details">
-              <BiCube />
-              <h4>NODEJS</h4>
-              <small className="text-light">Beginner</small>
+              <BiCube className="experience_details_icon"/>
+              <div>
+                <h4>NODEJS</h4>
+                <small className="text-light">Beginner</small>
+              </div>
             </article>
           </div>
         </div>
