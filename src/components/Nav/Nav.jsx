@@ -16,10 +16,13 @@ const Nav = ({activeNav, setActiveNav}) => {
         for (let i = 0; i < sections.length; i++) {
           const section = document.querySelector(sections[i]);
           const sectionTop = section.offsetTop;
-          const sectionHeight = section.offsetHeight;
-          const sectionMiddle = sectionTop+sectionHeight/2;
+          const sectionEnd = section.offsetTop+section.offsetHeight;
           const middleY = window.scrollY + window.innerHeight / 2;
-          if (middleY >= sectionMiddle && middleY < sectionTop + sectionHeight) {
+          // get the default font-size of root element 
+          const computedStyle = window.getComputedStyle(document.documentElement);
+          const fontSize = parseFloat(computedStyle.getPropertyValue('font-size'));
+          // sectionTop-5*fontSize to deal with the padding-top: 5rem; of each sections  
+          if (window.scrollY >= sectionTop-5*fontSize && middleY < sectionEnd) {
             setActiveNav(sections[i]);
             break;
           }
