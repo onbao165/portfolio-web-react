@@ -19,7 +19,7 @@
     background: var(--color-primary);
     padding: 2rem;
     border-radius: 0 0 3rem 3rem;
-    box-shadow: 0 2rem 1rem rgba(0,0,0,0.1);
+    box-shadow: 0 1rem 1rem rgba(44, 43, 43, 0.1);
 }
 .service_head h3{
     color: var(--color-bg);
@@ -29,3 +29,39 @@
 .service_list{
     padding: 2rem;
 }
+.service_list li{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+.service_list_icon{
+    color:var(--color-primary);
+    margin-top:16px;
+}
+.service_list p{
+    font-size: 0.9rem;
+}
+@media screen and (max-width: 1024px){
+    .services_container{
+        gap: 2rem;
+    }
+    .service{
+        height: auto;
+    }
+    .service_list li{
+        gap: 0.5rem;
+    }
+    .service_list_icon{
+        height: 2rem;
+        width: 2rem;
+        margin-top: 10px;
+    }
+}
+/* for mobile */
+@media screen and (max-width:600px){
+    .services_container{
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
+
