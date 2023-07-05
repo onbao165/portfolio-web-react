@@ -47,7 +47,7 @@ const Experience = () => {
             <article className="experience_details">
               <BiCube className="experience_details_icon"/>
               <div>
-                <h4>JAVA SPRING BOOT</h4>
+                <h4>SPRING BOOT</h4>
                 <small className="text-light">Intermediate</small>
               </div>
             </article>

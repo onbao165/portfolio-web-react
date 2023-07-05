@@ -53,11 +53,14 @@
 }
 /* for mobile */
 @media screen and (max-width:600px){
-    .experience_container{
-        gap: 1rem;
+    .experience_container > div{
+        width: 100%;
+        margin: 0 auto;
+        padding: 2rem 0rem;
     }
     .experience_content{
-        padding: 0.5rem;
+        padding: 1rem;
+        column-gap: 0.5rem;
     }
     .experience_details{
         padding: 0 0.5rem;
