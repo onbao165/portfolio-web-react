@@ -75,11 +75,11 @@
 /* for mobile */
 @media screen and (max-width:600px){
     .about_me{
-        width: 65%;
+        width: 70%;
         margin: 0 auto 3rem;
     }
     .about_cards{
-        gap:1rem;
+        gap:0.5rem;
     }
     .about_content{
         text-align: center;
