@@ -41,6 +41,8 @@
 .service_list p{
     font-size: 0.9rem;
 }
+/* ===========MEDIA QUERIES=========== */
+/* for tablets */
 @media screen and (max-width: 1024px){
     .services_container{
         gap: 2rem;
