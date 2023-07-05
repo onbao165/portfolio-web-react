@@ -1,7 +1,7 @@
 import React from "react";
 // import CV from  ''
 
-const CTA = ({setActiveNav}) => {
+const CTA = () => {
   return (
     <div className="cta">
       <a href="" download className="btn btn">
@@ -9,7 +9,7 @@ const CTA = ({setActiveNav}) => {
       </a>
       {/*put download attribute for downloadable file */}
       <a
-        href="#contact" onClick={() => setActiveNav("#contact")} className="btn btn-primary-variant">
+        href="#contact"className="btn btn-primary-variant">
         Contact me
       </a>
     </div>
