@@ -125,6 +125,9 @@ ul{
     .container{
         width: var(--container-width-sm);
     }
+    h4{
+        font-size: medium;
+    }
     section>h2 {
         margin-top: 2rem;
     }
