@@ -9,7 +9,7 @@ const CTA = ({setActiveNav}) => {
       </a>
       {/*put download attribute for downloadable file */}
       <a
-        href="#contact" onClick={() => setActiveNav("#contact")} className="btn btn-primary">
+        href="#contact" onClick={() => setActiveNav("#contact")} className="btn btn-primary-variant">
         Contact me
       </a>
     </div>
