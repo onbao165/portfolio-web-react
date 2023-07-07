@@ -22,7 +22,7 @@ const Contact = () => {
             <h5>Please fill out all fields</h5>
             <div className="send-btn">
             <button type='submit' className='btn btn-primary-variant'>Send Message</button>
-          </div>
+            </div>
         </form>
         <div className="contact_options">
           <article className="contact_option">
