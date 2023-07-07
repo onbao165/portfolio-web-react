@@ -17,7 +17,7 @@ body{
     /* color variables*/
     --color-bg: #8529a1;
     --color-bg-variant: #8f377bd2;
-    --color-primary: #ff6ce6;
+    --color-primary: #ff51ff;
     --color-primary-variant: #b639a5ea;
     --color-avatar-bg: #ba386c;
     --color-white: #fff;
@@ -37,7 +37,7 @@ body{
     color: var(--color-white);
     line-height: 1.5;
     /* background-image: url('../assets/background.jpg'); */
-    background: var(--color-bg);
+    background: linear-gradient(45deg, #9631b5, #a1299f, #4e0b61);
     background-repeat: no-repeat;
     background-size: cover;
 }
