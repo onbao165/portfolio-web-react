@@ -34,10 +34,7 @@ const About = () => {
             </article>
           </div>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic fugiat
-            eveniet laborum ut sint soluta! Doloremque cumque assumenda commodi
-            repudiandae labore, quia illo hic! Pariatur beatae repellendus
-            tempora iusto temporibus?
+            Highly motivated and dedicated freshman with a strong passion for Software Engineering from FPT University.
           </p>
         </div>
       </div>
