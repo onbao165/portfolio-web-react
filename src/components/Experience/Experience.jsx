@@ -6,63 +6,77 @@ const Experience = () => {
     <section id="experience">
       <h2>My Experience</h2>
       <div className="container experience_container">
-        <div className="experience_frontend">
-          {/* Frontend */}
-          <h3>Front-End Development</h3>
+        {/* Backend */}
+        <div className="experience_backend">
+          <h3>Back-End Development</h3>
           <div className="experience_content">
             <article className="experience_details">
-              <BiCube className="experience_details_icon"/>
+              <BiCube className="experience_details_icon" />
               <div>
-                <h4>HTML</h4>
+                <h4>C#</h4>
                 <small className="text-light">Intermediate</small>
               </div>
             </article>
             <article className="experience_details">
-              <BiCube className="experience_details_icon"/>
+              <BiCube className="experience_details_icon" />
               <div>
-                <h4>CSS</h4>
+                <h4>.NET CORE</h4>
                 <small className="text-light">Intermediate</small>
               </div>
             </article>
             <article className="experience_details">
-              <BiCube className="experience_details_icon"/>
+              <BiCube className="experience_details_icon" />
               <div>
-                <h4>JAVASCRIPT</h4>
+                <h4>TYPESCRIPT</h4>
                 <small className="text-light">Intermediate</small>
               </div>
             </article>
             <article className="experience_details">
-              <BiCube className="experience_details_icon"/>
+              <BiCube className="experience_details_icon" />
               <div>
-                <h4>REACT</h4>
-                <small className="text-light">Beginner</small>
+                <h4>MYSQL</h4>
+                <small className="text-light">Intermediate</small>
+              </div>
+            </article>
+            <article className="experience_details">
+              <BiCube className="experience_details_icon" />
+              <div>
+                <h4>SQL SERVER</h4>
+                <small className="text-light">Intermediate</small>
+              </div>
+            </article>
+            <article className="experience_details">
+              <BiCube className="experience_details_icon" />
+              <div>
+                <h4>POSTGRESQL</h4>
+                <small className="text-light">Intermediate</small>
               </div>
             </article>
           </div>
         </div>
-        {/* Backend */}
-        <div className="experience-backend">
-          <h3>Back-End Development</h3>
+        {/* Database & Deployment */}
+        <div className="experience_database">
+          <h3>Database & Deployment</h3>
           <div className="experience_content">
             <article className="experience_details">
-              <BiCube className="experience_details_icon"/>
+              <BiCube className="experience_details_icon" />
               <div>
-                <h4>SPRING BOOT</h4>
+                <h4>DOCKER</h4>
                 <small className="text-light">Intermediate</small>
               </div>
             </article>
             <article className="experience_details">
-              <BiCube className="experience_details_icon"/>
+              <BiCube className="experience_details_icon" />
               <div>
-                <h4>DOCKER</h4>
-                <small className="text-light">Beginner</small>
+                <h4>NGINX</h4>
+                <small className="text-light">Intermediate</small>
               </div>
             </article>
             <article className="experience_details">
-              <BiCube className="experience_details_icon"/>
+              <BiCube className="experience_details_icon" />
               <div>
-                <h4>NODEJS</h4>
-                <small className="text-light">Beginner</small>
+                <h4>GITHUB WORKFLOWS</h4>
+                <small className="text-light">Intermediate</small>
               </div>
             </article>
           </div>

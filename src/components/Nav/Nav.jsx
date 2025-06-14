@@ -1,17 +1,17 @@
-import React,{useEffect} from "react";
+import { useEffect } from "react";
 import "./nav.css";
-import { AiOutlineHome } from "react-icons/ai";
-import { BiUserCircle } from "react-icons/bi";
-import { BiBookBookmark } from "react-icons/bi";
-import { BsBriefcase } from "react-icons/bs";
-import { MdAlternateEmail } from "react-icons/md";
+import { AiFillHome } from "react-icons/ai";
+import { BiSolidBook, BiSolidUserCircle } from "react-icons/bi";
+import { BsBriefcaseFill } from "react-icons/bs";
+import { MdEmail, MdMiscellaneousServices } from "react-icons/md";
 
 const Nav = ({activeNav, setActiveNav}) => {
   useEffect(() => {
+    let timeoutId = setTimeout(() => {}, 0); // Initial timeoutId to avoid warnings
     const handleScroll = () => {
-      const sections = ["#home", "#about", "#experience", "#services", "#contact"];
+      const sections = ["#home", "#about", "#experience", "#portfolio", "#services", "#contact"];
       
-      const timeoutId = setTimeout(() => {
+      timeoutId = setTimeout(() => {
         // Check which section is in the viewport
         for (let i = 0; i < sections.length; i++) {
           const section = document.querySelector(sections[i]);
@@ -34,40 +34,47 @@ const Nav = ({activeNav, setActiveNav}) => {
     window.addEventListener("scroll", handleScroll);
     
     return () => {
+      clearTimeout(timeoutId); // Clear the timeout when the component unmounts to avoid memory leaks
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [setActiveNav]);
   return (
     <nav>
       <a
         href="#home"
         className={activeNav === "#home" ? "active" : ""}
       >
-        <AiOutlineHome />
+        <AiFillHome />
       </a>
       <a
         href="#about"
         className={activeNav === "#about" ? "active" : ""}
       >
-        <BiUserCircle />
+        <BiSolidUserCircle />
       </a>
       <a
         href="#experience"
         className={activeNav === "#experience" ? "active" : ""}
       >
-        <BiBookBookmark />
+        <BiSolidBook />
+      </a>
+      <a
+        href="#portfolio"
+        className={activeNav === "#portfolio" ? "active" : ""}
+      >
+        <BsBriefcaseFill />
       </a>
       <a
         href="#services"
         className={activeNav === "#services" ? "active" : ""}
       >
-        <BsBriefcase />
+        <MdMiscellaneousServices />
       </a>
       <a
         href="#contact"
         className={activeNav === "#contact" ? "active" : ""}
       >
-        <MdAlternateEmail />
+        <MdEmail />
       </a>
     </nav>
   );

@@ -34,7 +34,6 @@ const Contact = () => {
             placeholder="Your message"
             required
           ></textarea>
-          <h5>Please fill out all fields</h5>
           <div className="send-btn">
             <button type="submit" className="btn btn-primary-variant">
               Send Message
@@ -46,22 +45,22 @@ const Contact = () => {
             <MdEmail className="contact_option_icon" />
             <a
               href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=ongiabaoit22@gmail.com"
-              // This is Gmail compose URL with the recipient email address (to) specified as a query parameter. 
+              // This is Gmail compose URL with the recipient email address (to) specified as a query parameter.
               target="_blank"
-              rel="noopener"
+              rel="noreferrer"
             >
               Send an email
             </a>
           </article>
           <article className="contact_option">
             <FaFacebookMessenger className="contact_option_icon" />
-            <a href="https://m.me/barooon165" target="_blank" rel="noopener">
+            <a href="https://m.me/barooon165" target="_blank" rel="noreferrer">
               Chat with me
             </a>
           </article>
           <article className="contact_option">
             <AiFillPhone className="contact_option_icon" />
-            <h5>{"(+84) 1234567890"}</h5>
+            <h5>{"(+84) 911980886"}</h5>
           </article>
         </div>
       </div>
